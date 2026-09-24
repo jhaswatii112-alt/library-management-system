@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin: 25px 0 15px;
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Tables */
+.data-table {
+  width: 90%;
+  margin: 20px auto 35px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.data-table th {
+  background: #333;
+  color: white;
+}
+
+.data-table tr:hover {
+  background: #f5f5f5;
+}
+
+/* Issue Book */
+label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+select,
+input[type="date"] {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+button {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #1976d2;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #125aa0;
+}
