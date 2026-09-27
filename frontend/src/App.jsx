@@ -10,15 +10,15 @@ function App() {
   const [dueDate, setDueDate] = useState("");
 
   const loadData = () => {
-    fetch("http://localhost:5000/api/books")
+    fetch("https://library-management-system-kuap.onrender.com/api/books")
       .then((res) => res.json())
       .then((data) => setBooks(data));
 
-    fetch("http://localhost:5000/api/members")
+    fetch("https://library-management-system-kuap.onrender.com/api/members")
       .then((res) => res.json())
       .then((data) => setMembers(data));
 
-    fetch("http://localhost:5000/api/transactions")
+    fetch("https://library-management-system-kuap.onrender.com/api/transactions")
       .then((res) => res.json())
       .then((data) => setTransactions(data));
   };
@@ -34,7 +34,7 @@ function App() {
     }
 
     const response = await fetch(
-      "http://localhost:5000/api/transactions/issue",
+      "https://library-management-system-kuap.onrender.com/api/transactions/issue",
       {
         method: "POST",
         headers: {
@@ -63,7 +63,7 @@ function App() {
 
   const returnBook = async (transactionId) => {
     const response = await fetch(
-      `http://localhost:5000/api/transactions/return/${transactionId}`,
+      `https://library-management-system-kuap.onrender.com/api/transactions/return/${transactionId}`,
       {
         method: "PUT",
       }
